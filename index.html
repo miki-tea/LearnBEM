@@ -23,7 +23,7 @@
     <div class="hero">
       <div class="hero__body">
         <h1 class="hero__slogan">明日に向かってにBEMプラクティス！</h1>
-        <div class="hero__btn btn"><a href="" class="hero__btn btn__link">明日へGO！</a></div>
+        <div class="hero__btn btn"><a href="" class="hero__btn btn__link btn__link--dark">明日へGO！</a></div>
       </div>
     </div>
     <div class="container">
@@ -33,13 +33,29 @@
       <p class="container__body">
         「CSS設計、使えば便利」そんなの分かってる。「やってみよう」と自分なりに意識してCSSを書いてみるけど、いつも最後にはぐちゃぐちゃなCSSコードが手元に残る。「もうそんなの嫌だ！」ここで本腰を入れて、CSS設計の練習を始めてみようと思う。
       </p>
-      <div class="container__btn btn"><a href="" class="container__btn btn__link">BEM、始めました</a></div>
+      <button class="modal__btn btn">
+        <span href="" class="container__btn btn__link btn__link--light js-modal--open">モーダル</span>
+      </button>
+      <div class="modal js-modal">
+        <div class="modal__content">
+          <h1 class="modal__title">答えに一番近い場所</h1>
+          <p class="modal__body">
+            CSS設計の旅は続く。単一の答えが無い以上、この旅は永遠に終わらない。ただ、答えがないからこそ、旅を続けるからこそ、今が一番答えに近い場所にいることは事実なのだと信じている。<br>そう、ここが答えに一番近い場所!
+          </p>
+          <button class="modal__btn btn btn--close js-hideModal">
+            <span class="modal__link btn__link btn__link--dark btn__link--small js-modal--close">CLOSE</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal js-modal">
+        <div class="modal__bg js-modal--close"></div>
+      </div>
     </div>
   </main>
   <footer class="footer">
     <span class="footer__copy-rights">miki 2020</span>
   </footer>
-  <script>console.log("Chromeロード時にtransitionが動かないようにするためのscript");</script>
+  <script src="bundle.js"></script>
 </body>
 
 </html>
